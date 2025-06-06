@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={false}
+  title="Preventive health, made simple for startups"
+  subtitle="All-in-one coverage, diagnostics, and HSA—no headaches, just better care for your team."
+  customers={[
+    {
+      name: 'Lisa Qin',
+      position: 'CEO, Echo Labs',
+      imageSrc: '/generated/image-a-smiling-asian-woman-startup-ceo-in-a-m.webp'
+    },
+    {
+      name: 'Mateo Rivera',
+      position: 'Head of operations, Ninefold Creative',
+      imageSrc: '/generated/image-a-confident-latino-man-head-of-operation.webp'
+    },
+    {
+      name: 'Amina Jackson',
+      position: 'CTO, Nova Biotech',
+      imageSrc: '/generated/image-a-cheerful-black-woman-cto-in-an-open-pl.webp'
+    },
+    {
+      name: 'Riley Drew',
+      position: 'People lead, Luma Systems',
+      imageSrc: '/generated/image-a-thoughtful-white-non-binary-person-peo.webp'
+    },
+    {
+      name: 'Arjun Sharma',
+      position: 'Product lead, Crescent Tech',
+      imageSrc: '/generated/image-a-friendly-south-asian-man-product-lead-.webp'
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by health-conscious teams"
+	logoUrls={[
+		"https://logo.clearbit.com/levels.fyi",
+		"https://logo.clearbit.com/eightfold.ai",
+		"https://logo.clearbit.com/pilot.com",
+		"https://logo.clearbit.com/rippling.com"
+	]}
+/>
 
 <Summary
 	generating
